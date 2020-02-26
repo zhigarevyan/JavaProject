@@ -1,17 +1,18 @@
 package entity;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.ToString;
+import lombok.*;
 
+import java.io.Serializable;
 import java.util.Date;
-
+@NoArgsConstructor
 @EqualsAndHashCode
-@ToString
 @AllArgsConstructor
 @Data
-public class Attachments {
+public class Attachment implements Serializable {
+    private int id;
     private String nameOfFile;
     private Date dateOfDownload;
     private String commentary;
-}
+
+
+    }
+
